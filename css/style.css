@@ -81,15 +81,14 @@ ul li a{
     outline: auto;
 }
 
-#colmix{
+/* #colmix{
     width: 70%;
-    /* background: rgba(58, 156, 236, 0.808); */
     background: rgb(218, 203, 203, 0.95);
     padding: 0.5rem;
     border: none;
     height: auto;
     margin: 0 12rem;
-}
+} */
 
 #colmix > div{
     width: 40%;
@@ -100,7 +99,7 @@ ul li a{
     flex-direction: row;
 }
 
-.content{
+.content, .combination, .combination2, .footer-img, #colmix{
     padding: 0.5rem 0.5rem;
     border: none;
     width: 70%;
@@ -109,85 +108,83 @@ ul li a{
     background: rgb(218, 203, 203, 0.95);
 }
 
-.footer-img{
+/* .footer-img{
     width: 70%;
-    /* height: 600px; */
     margin: 0 12rem;
     background: rgb(218, 203, 203, 0.95);
     padding: 0.5rem;
-}
+} */
 
 .footer-img img{
     width: 100%;
 }
 
-.combination{
+/* .combination, .combination2{
     width: 70%;
-    /* height: 50vh; */
     background: rgb(218, 203, 203, 0.95);
     margin: auto 12rem;
     padding: 0.5rem;
-}
+} */
 
-.combination > .colgrad5{
+.colgrad5{
     width: 40%;
     height: 300px;
     display: inline-flex;
     flex-direction: row;
-   /* margin: 10px 10px; */
-    background: red;
+    background: repeating-linear-gradient(130deg, rgb(0, 26, 255) 10px, rgb(253, 253, 253) 40px, rgb(21, 5, 245) 40px, red 80px);
     border-radius: 1rem;
     margin-top: 1rem;
     margin-left: 5%;
 }
-.combination > .colgrad6{
+.colgrad6{
     width: 40%;
     height: 300px;
     display: inline-flex;
     flex-direction: row;
-   /* margin: 10px 10px; */
     background: repeating-linear-gradient(90deg, yellow 0px, blue 40px, green 40px, red 80px);
     border-radius: 1rem;
     margin-top: 1rem;
     margin-left: 5%;
 }
 
-.combination2{
+.colgrad7{
+    width: 40%;
+    height: 300px;
+    display: inline-flex;
+    flex-direction: row;
+   /* margin: 10px 10px; */
+    background: repeating-radial-gradient(circle, rgb(0, 255, 85) 10px, rgb(255, 38, 0) 40px, rgb(2, 18, 233) 40px, rgb(248, 244, 5) 40px);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-left: 5%;
+}
+ .colgrad8{
+    width: 40%;
+    height: 300px;
+    display: inline-flex;
+    flex-direction: row;
+   /* margin: 10px 10px; */
+    background: repeating-radial-gradient(circle, yellow 0px, blue 20px, green 20px, red 40px);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-left: 5%;
+}
+
+/* .combination2{
     width: 70%;
-    /* height: 50vh; */
     background: rgb(218, 203, 203, 0.95);
     margin: 0 12rem;
     padding: 0.5rem;
-}
-.combination2 > .colgrad7{
-    width: 40%;
-    height: 300px;
-    display: inline-flex;
-    flex-direction: row;
-   /* margin: 10px 10px; */
-    background: red;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    margin-left: 5%;
-}
-.combination2 > .colgrad8{
-    width: 40%;
-    height: 300px;
-    display: inline-flex;
-    flex-direction: row;
-   /* margin: 10px 10px; */
-    background: repeating-linear-gradient(90deg, yellow 0px, blue 40px, green 40px, red 80px);
-    border-radius: 1rem;
-    margin-top: 1rem;
-    margin-left: 5%;
-}
+} */
+
+ 
 
 #logo h2, fas{
     color: #fff;
 }
 
 .header h1{
-    font-family: cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 1.2rem;
     color:#fff;
@@ -237,20 +234,6 @@ p{
 
 .colgrad4{
     background: radial-gradient(circle, rgb(206, 3, 3)30%, rgba(255, 235, 0, 0.93) 40%, rgba(244, 13, 13, 0.42) 75%);
-}
-
-.colgrad5{
-    
-}
-
-.colgrad6{
-    /* background: repeating-linear-gradient(
-        90deg,
-        blue 0px,
-        aqua 10px,
-        black 10px,
-        red 20px
-        ); */
 }
 
 input{
@@ -346,7 +329,7 @@ a:active{
         width: 230px;
         background: #000;
         position: absolute;
-        transform: translate(-10%, 56%);
+        transform: translate(-50%, 56%);
         padding: 10px;
         padding-left: 1rem;
         align-items: stretch;
